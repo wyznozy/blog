@@ -1,9 +1,12 @@
 {
+  "homepage": "https://wyznozy.github.io/blog/",
   "private": true,
   "scripts": {
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
-    "dev": "next dev",
-    "start": "next start"
+    "dev": "next dev"
   },
   "dependencies": {
     "next": "latest",
@@ -12,5 +15,8 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
