@@ -8,7 +8,7 @@ import utilStyles from '../../styles/utils.module.css';
 
 const MyLinkedInImage = () => (
   <Image
-    src="/images/profile.jpg"
+    src="./images/profile.jpg"
     height={400}
     width={400}
     alt="Mike C"
