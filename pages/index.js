@@ -10,7 +10,11 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <h1 className={utilStyles.Link}>
-        <Link href="/posts/first-post">4-22 Post</Link>
+        <Link href="/posts/4-22">4-22 Post</Link>
+      </h1>
+
+      <h1 className={utilStyles.Link}>
+        <Link href="/posts/4-27">4-27 Post</Link>
       </h1>
     </Layout>
   );

@@ -6,16 +6,15 @@ import Script from 'next/script'
 import Layout from '../../components/layout';
 import utilStyles from '../../styles/utils.module.css';
 
-const MyLinkedInImage = () => (
-  <Image
-    src="/images/profile.jpg"
-    height={400}
-    width={400}
-    alt="Mike C"
-  />
-)
-
-
+// This is now from Layout
+// const MyLinkedInImage = () => (
+//   <Image
+//     src="/images/profile.jpg"
+//     height={400}
+//     width={400}
+//     alt="Mike C"
+//   />
+// )
 
 export default function FirstPost () {
   return(
@@ -48,7 +47,7 @@ export default function FirstPost () {
         <p>
           Over the course of the certification I've had to make numerous changes to the application. The latest changes I've had to do is message the SITA application to turn on transparency
           mode for the BGR (Boarding Gate Reader). <br/> The reason for this is because when connecting to a BGR, if the BGR is on a wedge device with an LSR it will just open both of the devices.
-          If i then scan a passport on the BGR, it will become confused and send the signal to either the LSR or the BGR randomly. 
+          If i then scan a boarding pass on the BGR, it will become confused and send the signal to either the LSR or the BGR randomly. 
         </p>
 
         <p>
@@ -76,15 +75,7 @@ export default function FirstPost () {
           Sorry if that was a mouthful, I will slowly figure out how to not just make this a wall of text with technical stuff sometime later lol. Will look into introducing images which hopefully 
           make it more fun to follow along with. Till next time!
         </p>
-
-
-
       </section>
-
-
-      <h2>
-        <Link href="/">Back to home</Link>
-      </h2>
     </Layout>
   );
 }
